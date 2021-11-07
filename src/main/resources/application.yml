@@ -1,0 +1,12 @@
+spring:
+  config:
+    import: "optional:configserver: http://localhost:8088"
+  cloud:
+    config:
+      name: hjy-dev
+      profile: dev
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
